@@ -16,5 +16,23 @@ namespace TrabajoPractico
         {
             InitializeComponent();
         }
+
+        private void articulosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaArticulos ventana2 = new frmListaArticulos();
+            ventana2.ShowDialog();
+        }
+
+        private void porMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBuscarporMarca ventana3 = new frmBuscarporMarca();
+            ventana3.ShowDialog();
+        }
+
+        private void porCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBuscarporCategoria ventana4 = new frmBuscarporCategoria();
+            ventana4.ShowDialog();
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace Manager
 
         public AccesoDB()
         {
-            conexion = new SqlConnection("Server=localhost; Database=CATALOGO_P3_DB; User Id=sa; Password=*********");
+            conexion = new SqlConnection("server=DESKTOP-TI2DHGA\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true");
             comando = new SqlCommand();
         }
 
