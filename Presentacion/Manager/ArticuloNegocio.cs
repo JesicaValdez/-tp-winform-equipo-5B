@@ -15,12 +15,13 @@ namespace Manager
             AccesoDB datos = new AccesoDB();
             try
             {
-                datos.setearConsulta("Select Codigo, Nombre, A.Descripcion as Detalle, M.Descripcion as Marca, C.Descripcion as Categoria, Precio, ImagenUrl From ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.IdMarca = M.Id AND A.IdCategoria = C.Id AND A.Id = I.IdArticulo");
+                datos.setearConsulta("Select A.Id, Codigo, Nombre, A.Descripcion as Detalle, M.Descripcion as Marca, C.Descripcion as Categoria, Precio, ImagenUrl From ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.IdMarca = M.Id AND A.IdCategoria = C.Id AND A.Id = I.IdArticulo");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
                     Articulo aux = new Articulo();
+                    aux.id = (int)datos.Lector["Id"];
                     aux.codigo = (string)datos.Lector["Codigo"];
                     aux.nombre = (string)datos.Lector["Nombre"];
                     aux.descripcion = (string)datos.Lector["Detalle"];
@@ -74,6 +75,23 @@ namespace Manager
                 }
             }
             return lista2;
+        }
+
+        public void eliminarArticulo(int id)
+        {
+            try
+            {
+                AccesoDB datos = new AccesoDB();
+                datos.setearConsulta("DELETE FROM ARTICULOS WHERE Id = @Id");
+                datos.setearParametro("@Id", id);
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }

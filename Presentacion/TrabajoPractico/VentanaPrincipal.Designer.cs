@@ -34,6 +34,7 @@
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsm_detalle = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,7 +78,8 @@
             this.articulosToolStripMenuItem,
             this.agregarToolStripMenuItem,
             this.modificarToolStripMenuItem,
-            this.eliminarToolStripMenuItem});
+            this.eliminarToolStripMenuItem,
+            this.tsm_detalle});
             this.tsmi_Articulo.Name = "tsmi_Articulo";
             this.tsmi_Articulo.Size = new System.Drawing.Size(61, 20);
             this.tsmi_Articulo.Text = "Articulo";
@@ -85,27 +87,35 @@
             // articulosToolStripMenuItem
             // 
             this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
-            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.articulosToolStripMenuItem.Text = "Articulos";
             this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
+            // tsm_detalle
+            // 
+            this.tsm_detalle.Name = "tsm_detalle";
+            this.tsm_detalle.Size = new System.Drawing.Size(180, 22);
+            this.tsm_detalle.Text = "Ver detalle";
+            this.tsm_detalle.Click += new System.EventHandler(this.tsm_detalle_Click);
             // 
             // buscarToolStripMenuItem
             // 
@@ -119,14 +129,14 @@
             // porMarcaToolStripMenuItem
             // 
             this.porMarcaToolStripMenuItem.Name = "porMarcaToolStripMenuItem";
-            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.porMarcaToolStripMenuItem.Text = "por Marca";
             this.porMarcaToolStripMenuItem.Click += new System.EventHandler(this.porMarcaToolStripMenuItem_Click);
             // 
             // porCategoriaToolStripMenuItem
             // 
             this.porCategoriaToolStripMenuItem.Name = "porCategoriaToolStripMenuItem";
-            this.porCategoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porCategoriaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.porCategoriaToolStripMenuItem.Text = "por Categoria";
             this.porCategoriaToolStripMenuItem.Click += new System.EventHandler(this.porCategoriaToolStripMenuItem_Click);
             // 
@@ -289,6 +299,7 @@
         private System.Windows.Forms.PictureBox pbx_articulo;
         private System.Windows.Forms.Button btn_anterior;
         private System.Windows.Forms.Button btn_siguiente;
+        private System.Windows.Forms.ToolStripMenuItem tsm_detalle;
     }
 }
 

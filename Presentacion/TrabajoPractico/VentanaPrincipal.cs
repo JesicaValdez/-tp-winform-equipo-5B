@@ -34,5 +34,17 @@ namespace TrabajoPractico
             frmBuscarporCategoria ventana4 = new frmBuscarporCategoria();
             ventana4.ShowDialog();
         }
+
+        private void tsm_detalle_Click(object sender, EventArgs e)
+        {
+           DetalleArticulo ventana = new DetalleArticulo();
+           ventana.ShowDialog();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Eliminacion ventana = new Eliminacion();
+            ventana.ShowDialog();
+        }
     }
 }
