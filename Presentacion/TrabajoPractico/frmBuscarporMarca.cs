@@ -47,7 +47,7 @@ namespace TrabajoPractico
             {
                 pbxMarca.Load(imagen);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 pbxMarca.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCZVKWKAUmqHUszu8_M3CoepdRNIXk9SvZQ&s");
             }
