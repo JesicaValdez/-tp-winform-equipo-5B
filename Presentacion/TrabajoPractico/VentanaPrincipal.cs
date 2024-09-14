@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
+using Manager;
 
 namespace TrabajoPractico
 {
@@ -23,6 +25,8 @@ namespace TrabajoPractico
             ventana2.ShowDialog();
         }
 
+
+
         private void porMarcaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBuscarporMarca ventana3 = new frmBuscarporMarca();
@@ -33,6 +37,24 @@ namespace TrabajoPractico
         {
             frmBuscarporCategoria ventana4 = new frmBuscarporCategoria();
             ventana4.ShowDialog();
+        }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarArticulo ventanaArticulo = new AgregarArticulo();
+            ventanaArticulo.ShowDialog();
+        }
+
+        private void tsm_agregarCategoria_Click(object sender, EventArgs e)
+        {
+            frm_AgregarCategoria ventanaCategoria = new frm_AgregarCategoria();
+            ventanaCategoria.ShowDialog();
+        }
+
+        private void tsm_modificarCategoria_Click(object sender, EventArgs e)
+        {
+            frmModificarCategoria ventanaModificarCategoria = new frmModificarCategoria();
+            ventanaModificarCategoria.ShowDialog();
         }
     }
 }

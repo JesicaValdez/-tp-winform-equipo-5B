@@ -57,5 +57,21 @@ namespace Manager
             finally { datos.cerrarConexion(); }
         }
 
+        public void modificaCategoria(Categoria categoriaModificada)
+        {
+            try
+            {
+                datos.setearConsulta("update CATEGORIAS set Descripcion = '" + categoriaModificada.Descripcion + "' where Id = " + categoriaModificada.Id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }

@@ -9,6 +9,15 @@ namespace Manager
 {
     public class ArticuloNegocio
     {
+        private List<Articulo> listaArticulos = new List<Articulo>();
+        private List<Categoria> ListaCategorias = new List<Categoria>();
+        AccesoDB datos = new AccesoDB();
+
+        public ArticuloNegocio()
+        {
+            datos = new AccesoDB();
+        }
+
         public List<Articulo> listarArticulos()
         {
             List<Articulo> lista = new List<Articulo>();
@@ -74,6 +83,31 @@ namespace Manager
                 }
             }
             return lista2;
+        }
+
+        public void agregarArticulo(Articulo nuevo)
+        {
+            AccesoDB datos = new AccesoDB();
+
+            try 
+            {
+                datos.setearConsulta("inset into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) \r\n values (@Codigo, @Nombre, @Descripcion, @Precio)");
+                datos.setearParametro("@Codigo", nuevo.codigo);
+                datos.setearParametro("@Nombre", nuevo.nombre);
+                datos.setearParametro("@Descripcion", nuevo.descripcion);
+                datos.setearParametro("@IdMarca", nuevo.marca.Id);
+                datos.setearParametro("@IdCategoria", nuevo.categoria.Id);
+                datos.setearParametro("@Precio", nuevo.precio);
+                datos.ejecutarAccion();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
     }
 }

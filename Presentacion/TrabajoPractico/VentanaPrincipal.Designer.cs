@@ -48,13 +48,7 @@
             this.tsm_eliminarCategoria = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_listarCategoria = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_Imagen = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgv_articulos = new System.Windows.Forms.DataGridView();
-            this.pbx_articulo = new System.Windows.Forms.PictureBox();
-            this.btn_anterior = new System.Windows.Forms.Button();
-            this.btn_siguiente = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_articulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_articulo)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -85,26 +79,27 @@
             // articulosToolStripMenuItem
             // 
             this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
-            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.articulosToolStripMenuItem.Text = "Articulos";
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.articulosToolStripMenuItem.Text = "Listar Articulos";
             this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // buscarToolStripMenuItem
@@ -119,14 +114,14 @@
             // porMarcaToolStripMenuItem
             // 
             this.porMarcaToolStripMenuItem.Name = "porMarcaToolStripMenuItem";
-            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.porMarcaToolStripMenuItem.Text = "por Marca";
             this.porMarcaToolStripMenuItem.Click += new System.EventHandler(this.porMarcaToolStripMenuItem_Click);
             // 
             // porCategoriaToolStripMenuItem
             // 
             this.porCategoriaToolStripMenuItem.Name = "porCategoriaToolStripMenuItem";
-            this.porCategoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porCategoriaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.porCategoriaToolStripMenuItem.Text = "por Categoria";
             this.porCategoriaToolStripMenuItem.Click += new System.EventHandler(this.porCategoriaToolStripMenuItem_Click);
             // 
@@ -179,14 +174,16 @@
             // tsm_agregarCategoria
             // 
             this.tsm_agregarCategoria.Name = "tsm_agregarCategoria";
-            this.tsm_agregarCategoria.Size = new System.Drawing.Size(125, 22);
+            this.tsm_agregarCategoria.Size = new System.Drawing.Size(180, 22);
             this.tsm_agregarCategoria.Text = "Agregar";
+            this.tsm_agregarCategoria.Click += new System.EventHandler(this.tsm_agregarCategoria_Click);
             // 
             // tsm_modificarCategoria
             // 
             this.tsm_modificarCategoria.Name = "tsm_modificarCategoria";
-            this.tsm_modificarCategoria.Size = new System.Drawing.Size(125, 22);
+            this.tsm_modificarCategoria.Size = new System.Drawing.Size(180, 22);
             this.tsm_modificarCategoria.Text = "Modificar";
+            this.tsm_modificarCategoria.Click += new System.EventHandler(this.tsm_modificarCategoria_Click);
             // 
             // tsm_eliminarCategoria
             // 
@@ -206,58 +203,18 @@
             this.tsm_Imagen.Size = new System.Drawing.Size(59, 20);
             this.tsm_Imagen.Text = "Imagen";
             // 
-            // dgv_articulos
-            // 
-            this.dgv_articulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_articulos.Location = new System.Drawing.Point(13, 40);
-            this.dgv_articulos.Name = "dgv_articulos";
-            this.dgv_articulos.Size = new System.Drawing.Size(560, 360);
-            this.dgv_articulos.TabIndex = 1;
-            // 
-            // pbx_articulo
-            // 
-            this.pbx_articulo.Location = new System.Drawing.Point(579, 40);
-            this.pbx_articulo.Name = "pbx_articulo";
-            this.pbx_articulo.Size = new System.Drawing.Size(209, 331);
-            this.pbx_articulo.TabIndex = 2;
-            this.pbx_articulo.TabStop = false;
-            // 
-            // btn_anterior
-            // 
-            this.btn_anterior.Location = new System.Drawing.Point(579, 377);
-            this.btn_anterior.Name = "btn_anterior";
-            this.btn_anterior.Size = new System.Drawing.Size(91, 23);
-            this.btn_anterior.TabIndex = 3;
-            this.btn_anterior.Text = "Imagen Anterior";
-            this.btn_anterior.UseVisualStyleBackColor = true;
-            // 
-            // btn_siguiente
-            // 
-            this.btn_siguiente.Location = new System.Drawing.Point(685, 377);
-            this.btn_siguiente.Name = "btn_siguiente";
-            this.btn_siguiente.Size = new System.Drawing.Size(103, 23);
-            this.btn_siguiente.TabIndex = 4;
-            this.btn_siguiente.Text = "Imagen Siguiente";
-            this.btn_siguiente.UseVisualStyleBackColor = true;
-            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 426);
-            this.Controls.Add(this.btn_siguiente);
-            this.Controls.Add(this.btn_anterior);
-            this.Controls.Add(this.pbx_articulo);
-            this.Controls.Add(this.dgv_articulos);
+            this.ClientSize = new System.Drawing.Size(800, 293);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "VentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Sistema de gestion de Articulos";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_articulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_articulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,10 +242,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsm_eliminarCategoria;
         private System.Windows.Forms.ToolStripMenuItem tsm_listarCategoria;
         private System.Windows.Forms.ToolStripMenuItem tsm_Imagen;
-        private System.Windows.Forms.DataGridView dgv_articulos;
-        private System.Windows.Forms.PictureBox pbx_articulo;
-        private System.Windows.Forms.Button btn_anterior;
-        private System.Windows.Forms.Button btn_siguiente;
     }
 }
 
