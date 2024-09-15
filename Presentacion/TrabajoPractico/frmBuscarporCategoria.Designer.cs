@@ -33,6 +33,7 @@
             this.cboCat = new System.Windows.Forms.ComboBox();
             this.dgvBuscarCat = new System.Windows.Forms.DataGridView();
             this.pbxCat = new System.Windows.Forms.PictureBox();
+            this.botonVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarCat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCat)).BeginInit();
             this.SuspendLayout();
@@ -85,17 +86,32 @@
             this.pbxCat.TabIndex = 4;
             this.pbxCat.TabStop = false;
             // 
+            // botonVolver
+            // 
+            this.botonVolver.Location = new System.Drawing.Point(20, 354);
+            this.botonVolver.Name = "botonVolver";
+            this.botonVolver.Size = new System.Drawing.Size(82, 21);
+            this.botonVolver.TabIndex = 5;
+            this.botonVolver.Text = "Volver";
+            this.botonVolver.UseVisualStyleBackColor = true;
+            this.botonVolver.Click += new System.EventHandler(this.botonVolver_Click);
+            // 
             // frmBuscarporCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 450);
+            this.ClientSize = new System.Drawing.Size(884, 390);
+            this.Controls.Add(this.botonVolver);
             this.Controls.Add(this.pbxCat);
             this.Controls.Add(this.dgvBuscarCat);
             this.Controls.Add(this.cboCat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmBuscarporCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBuscarporCategoria";
             this.Load += new System.EventHandler(this.frmBuscarporCategoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarCat)).EndInit();
@@ -112,5 +128,6 @@
         private System.Windows.Forms.ComboBox cboCat;
         private System.Windows.Forms.DataGridView dgvBuscarCat;
         private System.Windows.Forms.PictureBox pbxCat;
+        private System.Windows.Forms.Button botonVolver;
     }
 }

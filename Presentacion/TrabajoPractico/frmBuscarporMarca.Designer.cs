@@ -33,6 +33,7 @@
             this.cboMarca = new System.Windows.Forms.ComboBox();
             this.dgvBuscarMarca = new System.Windows.Forms.DataGridView();
             this.pbxMarca = new System.Windows.Forms.PictureBox();
+            this.botonVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarMarca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMarca)).BeginInit();
             this.SuspendLayout();
@@ -85,16 +86,30 @@
             this.pbxMarca.TabIndex = 4;
             this.pbxMarca.TabStop = false;
             // 
+            // botonVolver
+            // 
+            this.botonVolver.Location = new System.Drawing.Point(21, 361);
+            this.botonVolver.Name = "botonVolver";
+            this.botonVolver.Size = new System.Drawing.Size(84, 20);
+            this.botonVolver.TabIndex = 5;
+            this.botonVolver.Text = "Volver";
+            this.botonVolver.UseVisualStyleBackColor = true;
+            this.botonVolver.Click += new System.EventHandler(this.botonVolver_Click);
+            // 
             // frmBuscarporMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 450);
+            this.ClientSize = new System.Drawing.Size(884, 397);
+            this.Controls.Add(this.botonVolver);
             this.Controls.Add(this.pbxMarca);
             this.Controls.Add(this.dgvBuscarMarca);
             this.Controls.Add(this.cboMarca);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmBuscarporMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBuscarporMarca";
@@ -113,5 +128,6 @@
         private System.Windows.Forms.ComboBox cboMarca;
         private System.Windows.Forms.DataGridView dgvBuscarMarca;
         private System.Windows.Forms.PictureBox pbxMarca;
+        private System.Windows.Forms.Button botonVolver;
     }
 }

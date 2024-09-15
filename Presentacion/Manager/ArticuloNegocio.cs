@@ -31,14 +31,24 @@ namespace Manager
                 {
                     Articulo aux = new Articulo();
                     aux.id = (int)datos.Lector["Id"];
-                    aux.codigo = (string)datos.Lector["Codigo"];
-                    aux.nombre = (string)datos.Lector["Nombre"];
-                    aux.descripcion = (string)datos.Lector["Detalle"];
-                    aux.marca = new Marca();
-                    aux.marca.Descripcion = (string)datos.Lector["Marca"];
-                    aux.categoria = new Categoria();
-                    aux.categoria.Descripcion = (string)datos.Lector["Categoria"];
-                    aux.precio = (decimal)datos.Lector["Precio"];
+                    if (!(datos.Lector["Codigo"] is DBNull))
+                        aux.codigo = (string)datos.Lector["Codigo"];
+                    if (!(datos.Lector["Nombre"] is DBNull))
+                        aux.nombre = (string)datos.Lector["Nombre"];
+                    if (!(datos.Lector["Detalle"] is DBNull))
+                        aux.descripcion = (string)datos.Lector["Detalle"];
+                    if (!(datos.Lector["Marca"] is DBNull))
+                    {
+                        aux.marca = new Marca();
+                        aux.marca.Descripcion = (string)datos.Lector["Marca"];
+                    }
+                    if (!(datos.Lector["Categoria"] is DBNull))
+                    {
+                        aux.categoria = new Categoria();
+                        aux.categoria.Descripcion = (string)datos.Lector["Categoria"];
+                    }
+                    if (!(datos.Lector["Precio"] is DBNull))
+                        aux.precio = (decimal)datos.Lector["Precio"];
                     aux.imagenurl = (string)datos.Lector["ImagenUrl"];
 
                     lista.Add(aux);
