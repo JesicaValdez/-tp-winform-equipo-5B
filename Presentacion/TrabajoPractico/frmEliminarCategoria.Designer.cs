@@ -44,7 +44,7 @@
             this.dgv_eliminar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_eliminar.GridColor = System.Drawing.Color.DarkMagenta;
             this.dgv_eliminar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dgv_eliminar.Location = new System.Drawing.Point(68, 40);
+            this.dgv_eliminar.Location = new System.Drawing.Point(95, 109);
             this.dgv_eliminar.Name = "dgv_eliminar";
             this.dgv_eliminar.Size = new System.Drawing.Size(169, 225);
             this.dgv_eliminar.TabIndex = 0;
@@ -53,7 +53,7 @@
             // btn_eliminarCat
             // 
             this.btn_eliminarCat.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_eliminarCat.Location = new System.Drawing.Point(117, 282);
+            this.btn_eliminarCat.Location = new System.Drawing.Point(144, 351);
             this.btn_eliminarCat.Name = "btn_eliminarCat";
             this.btn_eliminarCat.Size = new System.Drawing.Size(75, 23);
             this.btn_eliminarCat.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.btn_cancelarEliminarCat.Name = "btn_cancelarEliminarCat";
             this.btn_cancelarEliminarCat.Size = new System.Drawing.Size(123, 23);
             this.btn_cancelarEliminarCat.TabIndex = 2;
-            this.btn_cancelarEliminarCat.Text = "Volver atras";
+            this.btn_cancelarEliminarCat.Text = "Cerrar";
             this.btn_cancelarEliminarCat.UseVisualStyleBackColor = true;
             this.btn_cancelarEliminarCat.Click += new System.EventHandler(this.btn_cancelarEliminarCat_Click);
             // 
@@ -77,7 +77,7 @@
             this.lb_EliminarCat.AutoSize = true;
             this.lb_EliminarCat.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_EliminarCat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb_EliminarCat.Location = new System.Drawing.Point(73, 0);
+            this.lb_EliminarCat.Location = new System.Drawing.Point(100, 69);
             this.lb_EliminarCat.Name = "lb_EliminarCat";
             this.lb_EliminarCat.Size = new System.Drawing.Size(155, 23);
             this.lb_EliminarCat.TabIndex = 3;
@@ -89,10 +89,11 @@
             this.gpb_eliminarCat.Controls.Add(this.dgv_eliminar);
             this.gpb_eliminarCat.Controls.Add(this.lb_EliminarCat);
             this.gpb_eliminarCat.Controls.Add(this.btn_eliminarCat);
+            this.gpb_eliminarCat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gpb_eliminarCat.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.gpb_eliminarCat.Location = new System.Drawing.Point(28, 55);
+            this.gpb_eliminarCat.Location = new System.Drawing.Point(0, 0);
             this.gpb_eliminarCat.Name = "gpb_eliminarCat";
-            this.gpb_eliminarCat.Size = new System.Drawing.Size(308, 334);
+            this.gpb_eliminarCat.Size = new System.Drawing.Size(366, 450);
             this.gpb_eliminarCat.TabIndex = 4;
             this.gpb_eliminarCat.TabStop = false;
             // 
@@ -103,6 +104,7 @@
             this.ClientSize = new System.Drawing.Size(366, 450);
             this.Controls.Add(this.gpb_eliminarCat);
             this.Controls.Add(this.btn_cancelarEliminarCat);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmEliminarCategoria";

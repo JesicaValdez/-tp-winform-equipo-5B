@@ -67,6 +67,7 @@
             // 
             // btn_cancelar
             // 
+            this.btn_cancelar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btn_cancelar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_cancelar.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -79,6 +80,7 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnAceptar.Location = new System.Drawing.Point(246, 540);
@@ -116,7 +118,7 @@
             this.panel_NuevoArticulo.Controls.Add(this.lbl_nombre);
             this.panel_NuevoArticulo.Controls.Add(this.txtBox_codigo);
             this.panel_NuevoArticulo.Controls.Add(this.lbl_codigo);
-            this.panel_NuevoArticulo.Location = new System.Drawing.Point(113, 284);
+            this.panel_NuevoArticulo.Location = new System.Drawing.Point(102, 275);
             this.panel_NuevoArticulo.Name = "panel_NuevoArticulo";
             this.panel_NuevoArticulo.Size = new System.Drawing.Size(577, 250);
             this.panel_NuevoArticulo.TabIndex = 7;
@@ -273,6 +275,7 @@
             this.Controls.Add(this.panel_NuevoArticulo);
             this.Controls.Add(this.lbArticuloNuevo);
             this.Controls.Add(this.dgv_modificarArticulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmModificarArticulo";
             this.Text = "Modificar Articulo";
             this.Load += new System.EventHandler(this.frmModificarArticulo_Load);

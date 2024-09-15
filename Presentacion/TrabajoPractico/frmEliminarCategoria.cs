@@ -42,10 +42,7 @@ namespace TrabajoPractico
             {
                 Categoria seleccionada = ((Categoria)dgv_eliminar.CurrentRow.DataBoundItem);
             }
-            else
-            {
-                MessageBox.Show("No hay una fila seleccionada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+           
         }
 
         private void btn_eliminarCat_Click(object sender, EventArgs e)
