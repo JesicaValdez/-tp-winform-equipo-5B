@@ -106,5 +106,17 @@ namespace TrabajoPractico
             frmModificarArticulo ventanaModificarArticulo = new frmModificarArticulo();
             CargarFormularios(ventanaModificarArticulo);
         }
+
+        private void AgregarMarca_Click(object sender, EventArgs e)
+        {
+            AgregarMarca ventana = new AgregarMarca();
+            ventana.ShowDialog();
+        }
+
+        private void tsm_listarMarca_Click(object sender, EventArgs e)
+        {
+            ListarMarca ventana = new ListarMarca();
+            ventana.ShowDialog();
+        }
     }
 }

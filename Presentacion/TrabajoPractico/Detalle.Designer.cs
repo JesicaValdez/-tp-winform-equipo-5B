@@ -41,12 +41,14 @@
             this.lbl_nombreA = new System.Windows.Forms.Label();
             this.pbox_imgA = new System.Windows.Forms.PictureBox();
             this.btn_atrasDA = new System.Windows.Forms.Button();
+            this.lbl_desc = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_imgA)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lbl_desc);
             this.panel1.Controls.Add(this.lbl_money);
             this.panel1.Controls.Add(this.lbl_precio);
             this.panel1.Controls.Add(this.lbl_marca);
@@ -67,7 +69,7 @@
             // 
             this.lbl_money.AutoSize = true;
             this.lbl_money.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_money.Location = new System.Drawing.Point(258, 124);
+            this.lbl_money.Location = new System.Drawing.Point(252, 124);
             this.lbl_money.Name = "lbl_money";
             this.lbl_money.Size = new System.Drawing.Size(52, 17);
             this.lbl_money.TabIndex = 15;
@@ -116,9 +118,10 @@
             // 
             // txt_descripcion
             // 
-            this.txt_descripcion.BackColor = System.Drawing.Color.White;
+            this.txt_descripcion.BackColor = System.Drawing.Color.Lavender;
             this.txt_descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_descripcion.Enabled = false;
+            this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_descripcion.Location = new System.Drawing.Point(255, 216);
             this.txt_descripcion.Multiline = true;
             this.txt_descripcion.Name = "txt_descripcion";
@@ -185,11 +188,21 @@
             this.btn_atrasDA.UseVisualStyleBackColor = true;
             this.btn_atrasDA.Click += new System.EventHandler(this.btn_atrasDA_Click);
             // 
+            // lbl_desc
+            // 
+            this.lbl_desc.AutoSize = true;
+            this.lbl_desc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_desc.Location = new System.Drawing.Point(252, 196);
+            this.lbl_desc.Name = "lbl_desc";
+            this.lbl_desc.Size = new System.Drawing.Size(87, 17);
+            this.lbl_desc.TabIndex = 16;
+            this.lbl_desc.Text = "Descripcion:";
+            // 
             // Detalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(600, 375);
             this.Controls.Add(this.btn_atrasDA);
             this.Controls.Add(this.panel1);
@@ -221,5 +234,6 @@
         private System.Windows.Forms.Label lbl_nombreA;
         private System.Windows.Forms.PictureBox pbox_imgA;
         private System.Windows.Forms.Button btn_atrasDA;
+        private System.Windows.Forms.Label lbl_desc;
     }
 }
