@@ -14,6 +14,8 @@ namespace TrabajoPractico
 {
     public partial class VentanaPrincipal : Form
     {
+        private System.Windows.Forms.ToolStripMenuItem tsm_detalle;
+
         public VentanaPrincipal()
         {
             InitializeComponent();
