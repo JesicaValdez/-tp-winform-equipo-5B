@@ -21,6 +21,24 @@ namespace TrabajoPractico
             InitializeComponent();
         }
 
+        private void CargarFormularios(Form formulario)
+        {
+            pnlContenido.Controls.Clear();
+
+            formulario.TopLevel = false;
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;
+
+            pnlContenido.Controls.Add(formulario);
+            pnlContenido.Tag = formulario;
+            formulario.Show();
+        }
+
+        private void VentanaPrincipal_Load(object sender, EventArgs e)
+        {
+            statusLb.Text = "Estado: Listo";
+        }
+
         private void articulosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListaArticulos ventana2 = new frmListaArticulos();
@@ -56,19 +74,37 @@ namespace TrabajoPractico
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AgregarArticulo ventanaArticulo = new AgregarArticulo();
-            ventanaArticulo.ShowDialog();
+            CargarFormularios(ventanaArticulo);
         }
 
         private void tsm_agregarCategoria_Click(object sender, EventArgs e)
         {
             frm_AgregarCategoria ventanaCategoria = new frm_AgregarCategoria();
-            ventanaCategoria.ShowDialog();
+            CargarFormularios(ventanaCategoria);
         }
 
         private void tsm_modificarCategoria_Click(object sender, EventArgs e)
         {
             frmModificarCategoria ventanaModificarCategoria = new frmModificarCategoria();
-            ventanaModificarCategoria.ShowDialog();
+            CargarFormularios(ventanaModificarCategoria);
+        }
+
+        private void tsm_eliminarCategoria_Click(object sender, EventArgs e)
+        {
+            frmEliminarCategoria ventanaEliminarCategoria = new frmEliminarCategoria();
+            CargarFormularios(ventanaEliminarCategoria);
+        }
+
+        private void tsm_listarCategoria_Click(object sender, EventArgs e)
+        {
+            frmListarCategoria ventanaListarCategoria = new frmListarCategoria();
+            CargarFormularios(ventanaListarCategoria);
+        }
+
+        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmModificarArticulo ventanaModificarArticulo = new frmModificarArticulo();
+            CargarFormularios(ventanaModificarArticulo);
         }
 
         private void AgregarMarca_Click(object sender, EventArgs e)

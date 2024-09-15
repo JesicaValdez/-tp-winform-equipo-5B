@@ -137,5 +137,28 @@ namespace Manager
                 throw ex;
             }
         }
+
+        public void modificarArticulo(Articulo articulo)
+        {
+
+            try
+            {
+                AccesoDB datos = new AccesoDB();
+                datos.setearConsulta("UPDATE ARTICULOS SET Codigo = @Codigo, Nombre = @Nombre, Precio = @Precio, Descripcion = @Descripcion WHERE Id = @Id");
+                datos.setearParametro("@Id", articulo.id);
+                datos.setearParametro("@Codigo", articulo.codigo);
+                datos.setearParametro("@Nombre", articulo.nombre);
+                datos.setearParametro("@Descripcion", articulo.descripcion);
+                datos.setearParametro("@Precio", articulo.precio);
+                datos.ejecutarAccion();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

@@ -42,21 +42,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Thistle;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lbCatNueva);
+            this.panel1.Controls.Add(this.lb_modificarCategoria);
             this.panel1.Controls.Add(this.dgv_modificarCategoria);
             this.panel1.Controls.Add(this.btn_cancelarModCategoria);
             this.panel1.Controls.Add(this.btn_aceptarModCategoria);
             this.panel1.Controls.Add(this.txt_modificarCategoria);
-            this.panel1.Location = new System.Drawing.Point(28, 81);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 323);
+            this.panel1.Size = new System.Drawing.Size(463, 443);
             this.panel1.TabIndex = 8;
             // 
             // lbCatNueva
             // 
             this.lbCatNueva.AutoSize = true;
-            this.lbCatNueva.Location = new System.Drawing.Point(61, 17);
+            this.lbCatNueva.Location = new System.Drawing.Point(88, 106);
             this.lbCatNueva.Name = "lbCatNueva";
             this.lbCatNueva.Size = new System.Drawing.Size(63, 13);
             this.lbCatNueva.TabIndex = 5;
@@ -65,7 +67,7 @@
             // dgv_modificarCategoria
             // 
             this.dgv_modificarCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_modificarCategoria.Location = new System.Drawing.Point(61, 77);
+            this.dgv_modificarCategoria.Location = new System.Drawing.Point(88, 166);
             this.dgv_modificarCategoria.Name = "dgv_modificarCategoria";
             this.dgv_modificarCategoria.Size = new System.Drawing.Size(263, 127);
             this.dgv_modificarCategoria.TabIndex = 4;
@@ -73,7 +75,7 @@
             // 
             // btn_cancelarModCategoria
             // 
-            this.btn_cancelarModCategoria.Location = new System.Drawing.Point(217, 237);
+            this.btn_cancelarModCategoria.Location = new System.Drawing.Point(244, 326);
             this.btn_cancelarModCategoria.Name = "btn_cancelarModCategoria";
             this.btn_cancelarModCategoria.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelarModCategoria.TabIndex = 3;
@@ -83,7 +85,7 @@
             // 
             // btn_aceptarModCategoria
             // 
-            this.btn_aceptarModCategoria.Location = new System.Drawing.Point(108, 237);
+            this.btn_aceptarModCategoria.Location = new System.Drawing.Point(135, 326);
             this.btn_aceptarModCategoria.Name = "btn_aceptarModCategoria";
             this.btn_aceptarModCategoria.Size = new System.Drawing.Size(75, 23);
             this.btn_aceptarModCategoria.TabIndex = 2;
@@ -93,7 +95,7 @@
             // 
             // txt_modificarCategoria
             // 
-            this.txt_modificarCategoria.Location = new System.Drawing.Point(61, 36);
+            this.txt_modificarCategoria.Location = new System.Drawing.Point(88, 125);
             this.txt_modificarCategoria.Name = "txt_modificarCategoria";
             this.txt_modificarCategoria.Size = new System.Drawing.Size(263, 20);
             this.txt_modificarCategoria.TabIndex = 1;
@@ -101,8 +103,9 @@
             // lb_modificarCategoria
             // 
             this.lb_modificarCategoria.AutoSize = true;
+            this.lb_modificarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_modificarCategoria.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_modificarCategoria.Location = new System.Drawing.Point(122, 45);
+            this.lb_modificarCategoria.Location = new System.Drawing.Point(12, 10);
             this.lb_modificarCategoria.Name = "lb_modificarCategoria";
             this.lb_modificarCategoria.Size = new System.Drawing.Size(200, 23);
             this.lb_modificarCategoria.TabIndex = 7;
@@ -114,7 +117,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 443);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lb_modificarCategoria);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmModificarCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -124,7 +127,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_modificarCategoria)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

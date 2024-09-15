@@ -65,6 +65,24 @@
     <Compile Include="frmAgregarCategoria.Designer.cs">
       <DependentUpon>frmAgregarCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEliminarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarCategoria.Designer.cs">
+      <DependentUpon>frmEliminarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarCategoria.Designer.cs">
+      <DependentUpon>frmListarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarArticulo.Designer.cs">
+      <DependentUpon>frmModificarArticulo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmModificarCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,8 +163,17 @@
     <EmbeddedResource Include="frmBuscarporMarca.resx">
       <DependentUpon>frmBuscarporMarca.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarCategoria.resx">
+      <DependentUpon>frmEliminarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListaArticulos.resx">
       <DependentUpon>frmListaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarCategoria.resx">
+      <DependentUpon>frmListarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarArticulo.resx">
+      <DependentUpon>frmModificarArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificarCategoria.resx">
       <DependentUpon>frmModificarCategoria.cs</DependentUpon>

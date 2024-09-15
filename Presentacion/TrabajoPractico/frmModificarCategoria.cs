@@ -31,8 +31,18 @@ namespace TrabajoPractico
 
         private void dgv_modificarCategoria_SelectionChanged(object sender, EventArgs e)
         {
-            Categoria categoria = (Categoria)dgv_modificarCategoria.CurrentRow.DataBoundItem;
-            txt_modificarCategoria.Text = categoria.Descripcion;
+            
+            if(dgv_modificarCategoria.CurrentRow == null)
+            {
+                MessageBox.Show("No hay una fila seleccionada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if(dgv_modificarCategoria.CurrentRow != null)
+            {
+                Categoria categoria = (Categoria)dgv_modificarCategoria.CurrentRow.DataBoundItem;
+                txt_modificarCategoria.Text = categoria.Descripcion;
+            }
+
+            
 
         }
 

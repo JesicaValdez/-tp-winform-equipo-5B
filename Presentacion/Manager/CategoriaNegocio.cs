@@ -73,5 +73,24 @@ namespace Manager
                 datos.cerrarConexion();
             }
         }
+
+        public void eliminarCategoria(Categoria eliminarCat)
+        {
+            try
+            {
+
+                datos.setearConsulta("delete from CATEGORIAS where Id = " + eliminarCat.Id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }
