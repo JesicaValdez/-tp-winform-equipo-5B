@@ -39,6 +39,18 @@ namespace TrabajoPractico
             ventana4.ShowDialog();
         }
 
+        private void tsm_detalle_Click(object sender, EventArgs e)
+        {
+           DetalleArticulo ventana = new DetalleArticulo();
+           ventana.ShowDialog();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Eliminacion ventana = new Eliminacion();
+            ventana.ShowDialog();
+        }
+
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AgregarArticulo ventanaArticulo = new AgregarArticulo();

@@ -34,6 +34,7 @@
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsm_detalle = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +72,8 @@
             this.articulosToolStripMenuItem,
             this.agregarToolStripMenuItem,
             this.modificarToolStripMenuItem,
-            this.eliminarToolStripMenuItem});
+            this.eliminarToolStripMenuItem,
+            this.tsm_detalle});
             this.tsmi_Articulo.Name = "tsmi_Articulo";
             this.tsmi_Articulo.Size = new System.Drawing.Size(61, 20);
             this.tsmi_Articulo.Text = "Articulo";
@@ -79,8 +81,8 @@
             // articulosToolStripMenuItem
             // 
             this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
-            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.articulosToolStripMenuItem.Text = "Listar Articulos";
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.articulosToolStripMenuItem.Text = "Articulos";
             this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
@@ -101,6 +103,14 @@
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
+            // tsm_detalle
+            // 
+            this.tsm_detalle.Name = "tsm_detalle";
+            this.tsm_detalle.Size = new System.Drawing.Size(180, 22);
+            this.tsm_detalle.Text = "Ver detalle";
+            this.tsm_detalle.Click += new System.EventHandler(this.tsm_detalle_Click);
             // 
             // buscarToolStripMenuItem
             // 
@@ -242,6 +252,10 @@
         private System.Windows.Forms.ToolStripMenuItem tsm_eliminarCategoria;
         private System.Windows.Forms.ToolStripMenuItem tsm_listarCategoria;
         private System.Windows.Forms.ToolStripMenuItem tsm_Imagen;
+        private System.Windows.Forms.DataGridView dgv_articulos;
+        private System.Windows.Forms.PictureBox pbx_articulo;
+        private System.Windows.Forms.Button btn_anterior;
+        private System.Windows.Forms.Button btn_siguiente;
     }
 }
 

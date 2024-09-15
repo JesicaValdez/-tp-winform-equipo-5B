@@ -25,6 +25,7 @@ namespace TrabajoPractico
             ArticuloNegocio negocio = new ArticuloNegocio();
             listaarticulos = negocio.listarArticulos();
             dgvArticulos.DataSource = listaarticulos;
+            dgvArticulos.Columns["Id"].Visible = false;
             dgvArticulos.Columns["ImagenUrl"].Visible = false;
             cargarimagen(listaarticulos[0].imagenurl);
         }
@@ -35,7 +36,7 @@ namespace TrabajoPractico
             {
                 pbxArticulos.Load(imagen);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 pbxArticulos.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCZVKWKAUmqHUszu8_M3CoepdRNIXk9SvZQ&s");
             }

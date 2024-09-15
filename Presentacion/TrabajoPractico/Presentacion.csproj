@@ -65,6 +65,24 @@
     <Compile Include="frmModificarCategoria.Designer.cs">
       <DependentUpon>frmModificarCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalle.Designer.cs">
+      <DependentUpon>Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleArticulo.Designer.cs">
+      <DependentUpon>DetalleArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminacion.Designer.cs">
+      <DependentUpon>Eliminacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarporCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +109,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Detalle.resx">
+      <DependentUpon>Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleArticulo.resx">
+      <DependentUpon>DetalleArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminacion.resx">
+      <DependentUpon>Eliminacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarArticulo.resx">
       <DependentUpon>AgregarArticulo.cs</DependentUpon>
     </EmbeddedResource>
