@@ -117,7 +117,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "frm_AgregarCategoria";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar Categoria";
             this.Load += new System.EventHandler(this.frm_AgregarCategoria_Load);
             this.panelNewCat.ResumeLayout(false);
