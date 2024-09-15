@@ -47,5 +47,10 @@ namespace TrabajoPractico
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             cargarimagen(seleccionado.imagenurl);
         }
+
+        private void botonVolver_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

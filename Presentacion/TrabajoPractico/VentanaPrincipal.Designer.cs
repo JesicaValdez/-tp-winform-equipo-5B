@@ -81,8 +81,8 @@
             // articulosToolStripMenuItem
             // 
             this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
-            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.articulosToolStripMenuItem.Text = "Articulos";
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.articulosToolStripMenuItem.Text = "Listar";
             this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
@@ -184,14 +184,14 @@
             // tsm_agregarCategoria
             // 
             this.tsm_agregarCategoria.Name = "tsm_agregarCategoria";
-            this.tsm_agregarCategoria.Size = new System.Drawing.Size(180, 22);
+            this.tsm_agregarCategoria.Size = new System.Drawing.Size(125, 22);
             this.tsm_agregarCategoria.Text = "Agregar";
             this.tsm_agregarCategoria.Click += new System.EventHandler(this.tsm_agregarCategoria_Click);
             // 
             // tsm_modificarCategoria
             // 
             this.tsm_modificarCategoria.Name = "tsm_modificarCategoria";
-            this.tsm_modificarCategoria.Size = new System.Drawing.Size(180, 22);
+            this.tsm_modificarCategoria.Size = new System.Drawing.Size(125, 22);
             this.tsm_modificarCategoria.Text = "Modificar";
             this.tsm_modificarCategoria.Click += new System.EventHandler(this.tsm_modificarCategoria_Click);
             // 

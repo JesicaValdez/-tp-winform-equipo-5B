@@ -52,5 +52,10 @@ namespace TrabajoPractico
                 pbxCat.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCZVKWKAUmqHUszu8_M3CoepdRNIXk9SvZQ&s");
             }
         }
+
+        private void botonVolver_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
