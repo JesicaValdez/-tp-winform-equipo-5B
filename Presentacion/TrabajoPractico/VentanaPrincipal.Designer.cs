@@ -81,6 +81,8 @@
             // articulosToolStripMenuItem
             // 
             this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.articulosToolStripMenuItem.Text = "Articulos";
             this.articulosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.articulosToolStripMenuItem.Text = "Listar";
             this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
@@ -88,27 +90,27 @@
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // tsm_detalle
             // 
             this.tsm_detalle.Name = "tsm_detalle";
-            this.tsm_detalle.Size = new System.Drawing.Size(180, 22);
+            this.tsm_detalle.Size = new System.Drawing.Size(128, 22);
             this.tsm_detalle.Text = "Ver detalle";
             this.tsm_detalle.Click += new System.EventHandler(this.tsm_detalle_Click);
             // 
@@ -149,26 +151,28 @@
             // AgregarMarca
             // 
             this.AgregarMarca.Name = "AgregarMarca";
-            this.AgregarMarca.Size = new System.Drawing.Size(125, 22);
+            this.AgregarMarca.Size = new System.Drawing.Size(180, 22);
             this.AgregarMarca.Text = "Agregar";
+            this.AgregarMarca.Click += new System.EventHandler(this.AgregarMarca_Click);
             // 
             // tsm_modificarMarca
             // 
             this.tsm_modificarMarca.Name = "tsm_modificarMarca";
-            this.tsm_modificarMarca.Size = new System.Drawing.Size(125, 22);
+            this.tsm_modificarMarca.Size = new System.Drawing.Size(180, 22);
             this.tsm_modificarMarca.Text = "Modificar";
             // 
             // tsm_eliminarMarca
             // 
             this.tsm_eliminarMarca.Name = "tsm_eliminarMarca";
-            this.tsm_eliminarMarca.Size = new System.Drawing.Size(125, 22);
+            this.tsm_eliminarMarca.Size = new System.Drawing.Size(180, 22);
             this.tsm_eliminarMarca.Text = "Eliminar";
             // 
             // tsm_listarMarca
             // 
             this.tsm_listarMarca.Name = "tsm_listarMarca";
-            this.tsm_listarMarca.Size = new System.Drawing.Size(125, 22);
+            this.tsm_listarMarca.Size = new System.Drawing.Size(180, 22);
             this.tsm_listarMarca.Text = "Listar";
+            this.tsm_listarMarca.Click += new System.EventHandler(this.tsm_listarMarca_Click);
             // 
             // tsm_Categoria
             // 
@@ -252,10 +256,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsm_eliminarCategoria;
         private System.Windows.Forms.ToolStripMenuItem tsm_listarCategoria;
         private System.Windows.Forms.ToolStripMenuItem tsm_Imagen;
-        private System.Windows.Forms.DataGridView dgv_articulos;
-        private System.Windows.Forms.PictureBox pbx_articulo;
-        private System.Windows.Forms.Button btn_anterior;
-        private System.Windows.Forms.Button btn_siguiente;
     }
 }
 

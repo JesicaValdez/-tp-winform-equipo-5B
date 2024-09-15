@@ -32,6 +32,7 @@ namespace TrabajoPractico
                 lbl_precio.Text = "$" + articulo.precio.ToString();
                 txt_descripcion.Text = articulo.descripcion;
                 cargarImagen(articulo.imagenurl);
+                txt_descripcion.SelectionStart = txt_descripcion.Text.Length;
             }
             catch (Exception ex)
             {

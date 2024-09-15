@@ -84,6 +84,7 @@
             this.Controls.Add(this.pbox_elimiar);
             this.Controls.Add(this.dgv_eliminar);
             this.Name = "Eliminacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminacion";
             this.Load += new System.EventHandler(this.Eliminacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_eliminar)).EndInit();
