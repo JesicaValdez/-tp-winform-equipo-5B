@@ -49,9 +49,9 @@
             // dgv_listarM
             // 
             this.dgv_listarM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listarM.Location = new System.Drawing.Point(19, 20);
+            this.dgv_listarM.Location = new System.Drawing.Point(55, 20);
             this.dgv_listarM.Name = "dgv_listarM";
-            this.dgv_listarM.Size = new System.Drawing.Size(240, 235);
+            this.dgv_listarM.Size = new System.Drawing.Size(173, 235);
             this.dgv_listarM.TabIndex = 1;
             // 
             // panel1

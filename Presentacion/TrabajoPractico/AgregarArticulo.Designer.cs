@@ -30,6 +30,7 @@
         {
             this.lbArticuloNuevo = new System.Windows.Forms.Label();
             this.panel_NuevoArticulo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lb_UrlImagen = new System.Windows.Forms.Label();
             this.txtBox_UrlImagen = new System.Windows.Forms.TextBox();
             this.txtBox_precio = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel_NuevoArticulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +69,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_NuevoArticulo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel_NuevoArticulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_NuevoArticulo.Controls.Add(this.btn_cancelar);
             this.panel_NuevoArticulo.Controls.Add(this.label1);
             this.panel_NuevoArticulo.Controls.Add(this.lb_UrlImagen);
             this.panel_NuevoArticulo.Controls.Add(this.txtBox_UrlImagen);
@@ -86,8 +87,18 @@
             this.panel_NuevoArticulo.Controls.Add(this.lbl_codigo);
             this.panel_NuevoArticulo.Location = new System.Drawing.Point(0, 0);
             this.panel_NuevoArticulo.Name = "panel_NuevoArticulo";
-            this.panel_NuevoArticulo.Size = new System.Drawing.Size(858, 354);
+            this.panel_NuevoArticulo.Size = new System.Drawing.Size(618, 414);
             this.panel_NuevoArticulo.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(43, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 23);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Nuevo Articulo";
             // 
             // lb_UrlImagen
             // 
@@ -214,10 +225,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(611, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(608, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 354);
+            this.pictureBox1.Size = new System.Drawing.Size(10, 414);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -225,7 +237,7 @@
             // 
             this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAceptar.Location = new System.Drawing.Point(141, 319);
+            this.btnAceptar.Location = new System.Drawing.Point(141, 349);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 4;
@@ -238,7 +250,7 @@
             this.btn_cancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_cancelar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_cancelar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_cancelar.Location = new System.Drawing.Point(342, 319);
+            this.btn_cancelar.Location = new System.Drawing.Point(379, 348);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 5;
@@ -246,22 +258,11 @@
             this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 23);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Nuevo Articulo";
-            // 
             // AgregarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 354);
-            this.Controls.Add(this.btn_cancelar);
+            this.ClientSize = new System.Drawing.Size(618, 414);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel_NuevoArticulo);

@@ -52,8 +52,15 @@ namespace Manager
                     if (!(datos.Lector["Precio"] is DBNull))
                         aux.precio = (decimal)datos.Lector["Precio"];
                     lista1 = negocio.buscarimagenes(aux.id);
-                    aux.imagenurl = lista1[0].Url;
 
+                    if (lista1 != null && lista1.Count > 0)
+                    {
+                        aux.imagenurl = lista1[0].Url;
+                    }
+                    else
+                    {
+                        aux.imagenurl = null;
+                    }
                     lista.Add(aux);
                 }
                 return lista;
@@ -105,7 +112,7 @@ namespace Manager
 
             try 
             {
-                datos.setearConsulta("inset into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) \r\n values (@Codigo, @Nombre, @Descripcion, @Precio)");
+                datos.setearConsulta("insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) \r\n values (@Codigo, @Nombre, @Descripcion, @IdMarca, @IdCategoria, @Precio)");
                 datos.setearParametro("@Codigo", nuevo.codigo);
                 datos.setearParametro("@Nombre", nuevo.nombre);
                 datos.setearParametro("@Descripcion", nuevo.descripcion);
@@ -155,6 +162,27 @@ namespace Manager
                 datos.setearParametro("@Precio", articulo.precio);
                 datos.ejecutarAccion();
 
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void insertarImagenes(Articulo nuevoArticulo)
+        {
+            Articulo articulo = new Articulo();
+            articulo = listarArticulos().Last();
+
+            try
+            {
+                AccesoDB datos = new AccesoDB();
+                datos.setearConsulta("insert into IMAGENES (IdArticulo, ImagenUrl) values (@IdArticulo, @ImagenUrl)");
+                datos.setearParametro("@IdArticulo", articulo.id);
+                datos.setearParametro("@ImagenUrl", articulo.imagenurl);
+                datos.ejecutarAccion();
 
             }
             catch (Exception ex)

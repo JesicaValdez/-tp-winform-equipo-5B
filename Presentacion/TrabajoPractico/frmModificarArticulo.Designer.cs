@@ -67,16 +67,17 @@
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_cancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_cancelar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_cancelar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_cancelar.Location = new System.Drawing.Point(453, 540);
+            this.btn_cancelar.Location = new System.Drawing.Point(439, 540);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 10;
-            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.Text = "Salir";
             this.btn_cancelar.UseVisualStyleBackColor = false;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btnAceptar
             // 
@@ -118,9 +119,9 @@
             this.panel_NuevoArticulo.Controls.Add(this.lbl_nombre);
             this.panel_NuevoArticulo.Controls.Add(this.txtBox_codigo);
             this.panel_NuevoArticulo.Controls.Add(this.lbl_codigo);
-            this.panel_NuevoArticulo.Location = new System.Drawing.Point(102, 275);
+            this.panel_NuevoArticulo.Location = new System.Drawing.Point(75, 275);
             this.panel_NuevoArticulo.Name = "panel_NuevoArticulo";
-            this.panel_NuevoArticulo.Size = new System.Drawing.Size(577, 250);
+            this.panel_NuevoArticulo.Size = new System.Drawing.Size(642, 250);
             this.panel_NuevoArticulo.TabIndex = 7;
             // 
             // lb_UrlImagen

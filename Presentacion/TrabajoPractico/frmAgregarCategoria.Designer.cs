@@ -77,15 +77,15 @@
             // dgv_categoriaAgregada
             // 
             this.dgv_categoriaAgregada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_categoriaAgregada.Location = new System.Drawing.Point(97, 174);
+            this.dgv_categoriaAgregada.Location = new System.Drawing.Point(120, 176);
             this.dgv_categoriaAgregada.Name = "dgv_categoriaAgregada";
-            this.dgv_categoriaAgregada.Size = new System.Drawing.Size(243, 127);
+            this.dgv_categoriaAgregada.Size = new System.Drawing.Size(192, 127);
             this.dgv_categoriaAgregada.TabIndex = 4;
             this.dgv_categoriaAgregada.SelectionChanged += new System.EventHandler(this.dgv_categoriaAgregada_SelectionChanged);
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(250, 334);
+            this.btn_cancelar.Location = new System.Drawing.Point(237, 334);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 3;
@@ -95,7 +95,7 @@
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(100, 334);
+            this.btn_aceptar.Location = new System.Drawing.Point(120, 334);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.btn_aceptar.TabIndex = 2;

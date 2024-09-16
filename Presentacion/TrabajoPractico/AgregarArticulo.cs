@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dominio;
@@ -35,17 +36,10 @@ namespace TrabajoPractico
 
             try
             {
-                cBox_categoria.DataSource = categoriaNegocio.ListarCategorias();
-                cBox_categoria.ValueMember = "Id";
-                cBox_categoria.DisplayMember = "Descripcion";
-                cBox_categoria.SelectedIndex = -1;
-
                 cBox_marca.DataSource = marcaNegocio.ListarMarcas();
-                cBox_marca.ValueMember = "Id";
-                cBox_marca.DisplayMember = "Descripcion";
-                cBox_marca.SelectedIndex = -1;
+                cBox_categoria.DataSource = categoriaNegocio.ListarCategorias();
 
-                if(articulo != null)
+                if (articulo != null)
                 {
                     txtBox_codigo.Text = articulo.codigo;
                     txtBox_nombre.Text = articulo.nombre;
@@ -54,6 +48,7 @@ namespace TrabajoPractico
                     cBox_categoria.SelectedValue = articulo.categoria.Id;
                     cBox_marca.SelectedValue = articulo.marca.Id;
                     txtBox_UrlImagen.Text = articulo.imagenurl;
+                    pictureBox1.Visible = false;
                 }
 
 
@@ -126,6 +121,12 @@ namespace TrabajoPractico
                     articulo.imagenurl = txtBox_UrlImagen.Text;
 
                     negocio.agregarArticulo(articulo);
+
+                    Articulo articulo1 = negocio.listarArticulos().Last();
+                    articulo.id = articulo1.id;
+                    negocio.insertarImagenes(articulo);
+
+
                     MessageBox.Show("Articulo agregado correctamente");
                     this.Close();
 

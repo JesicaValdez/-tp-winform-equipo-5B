@@ -52,7 +52,7 @@
             // btn_cancelar
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Location = new System.Drawing.Point(192, 308);
+            this.btn_cancelar.Location = new System.Drawing.Point(166, 308);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 3;
@@ -63,7 +63,7 @@
             // btn_aceptar
             // 
             this.btn_aceptar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_aceptar.Location = new System.Drawing.Point(27, 308);
+            this.btn_aceptar.Location = new System.Drawing.Point(67, 308);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.btn_aceptar.TabIndex = 2;
@@ -74,9 +74,9 @@
             // dgv_marca
             // 
             this.dgv_marca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_marca.Location = new System.Drawing.Point(27, 56);
+            this.dgv_marca.Location = new System.Drawing.Point(67, 58);
             this.dgv_marca.Name = "dgv_marca";
-            this.dgv_marca.Size = new System.Drawing.Size(240, 235);
+            this.dgv_marca.Size = new System.Drawing.Size(174, 235);
             this.dgv_marca.TabIndex = 0;
             this.dgv_marca.SelectionChanged += new System.EventHandler(this.dgv_marca_SelectionChanged);
             // 

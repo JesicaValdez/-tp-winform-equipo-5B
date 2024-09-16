@@ -26,6 +26,7 @@ namespace TrabajoPractico
             MarcaNegocio negocio = new MarcaNegocio();
             listaMarca = negocio.ListarMarcas();
             dgv_marca.DataSource = listaMarca;
+            dgv_marca.Columns["Id"].Visible = false;
         }
 
         private void dgv_marca_SelectionChanged(object sender, EventArgs e)

@@ -30,11 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbCatNueva = new System.Windows.Forms.Label();
+            this.lb_modificarCategoria = new System.Windows.Forms.Label();
             this.dgv_modificarCategoria = new System.Windows.Forms.DataGridView();
             this.btn_cancelarModCategoria = new System.Windows.Forms.Button();
             this.btn_aceptarModCategoria = new System.Windows.Forms.Button();
             this.txt_modificarCategoria = new System.Windows.Forms.TextBox();
-            this.lb_modificarCategoria = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_modificarCategoria)).BeginInit();
             this.SuspendLayout();
@@ -64,20 +64,32 @@
             this.lbCatNueva.TabIndex = 5;
             this.lbCatNueva.Text = "Descripcion";
             // 
+            // lb_modificarCategoria
+            // 
+            this.lb_modificarCategoria.AutoSize = true;
+            this.lb_modificarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lb_modificarCategoria.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_modificarCategoria.Location = new System.Drawing.Point(12, 10);
+            this.lb_modificarCategoria.Name = "lb_modificarCategoria";
+            this.lb_modificarCategoria.Size = new System.Drawing.Size(200, 23);
+            this.lb_modificarCategoria.TabIndex = 7;
+            this.lb_modificarCategoria.Text = "MODIFICAR CATEGORIA";
+            // 
             // dgv_modificarCategoria
             // 
+            this.dgv_modificarCategoria.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.dgv_modificarCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_modificarCategoria.Location = new System.Drawing.Point(88, 166);
+            this.dgv_modificarCategoria.Location = new System.Drawing.Point(115, 162);
             this.dgv_modificarCategoria.Name = "dgv_modificarCategoria";
-            this.dgv_modificarCategoria.Size = new System.Drawing.Size(263, 127);
+            this.dgv_modificarCategoria.Size = new System.Drawing.Size(187, 200);
             this.dgv_modificarCategoria.TabIndex = 4;
             this.dgv_modificarCategoria.SelectionChanged += new System.EventHandler(this.dgv_modificarCategoria_SelectionChanged);
             // 
             // btn_cancelarModCategoria
             // 
-            this.btn_cancelarModCategoria.Location = new System.Drawing.Point(244, 326);
+            this.btn_cancelarModCategoria.Location = new System.Drawing.Point(227, 380);
             this.btn_cancelarModCategoria.Name = "btn_cancelarModCategoria";
-            this.btn_cancelarModCategoria.Size = new System.Drawing.Size(75, 23);
+            this.btn_cancelarModCategoria.Size = new System.Drawing.Size(75, 26);
             this.btn_cancelarModCategoria.TabIndex = 3;
             this.btn_cancelarModCategoria.Text = "Cancelar";
             this.btn_cancelarModCategoria.UseVisualStyleBackColor = true;
@@ -85,9 +97,9 @@
             // 
             // btn_aceptarModCategoria
             // 
-            this.btn_aceptarModCategoria.Location = new System.Drawing.Point(135, 326);
+            this.btn_aceptarModCategoria.Location = new System.Drawing.Point(115, 380);
             this.btn_aceptarModCategoria.Name = "btn_aceptarModCategoria";
-            this.btn_aceptarModCategoria.Size = new System.Drawing.Size(75, 23);
+            this.btn_aceptarModCategoria.Size = new System.Drawing.Size(75, 26);
             this.btn_aceptarModCategoria.TabIndex = 2;
             this.btn_aceptarModCategoria.Text = "Aceptar";
             this.btn_aceptarModCategoria.UseVisualStyleBackColor = true;
@@ -99,17 +111,6 @@
             this.txt_modificarCategoria.Name = "txt_modificarCategoria";
             this.txt_modificarCategoria.Size = new System.Drawing.Size(263, 20);
             this.txt_modificarCategoria.TabIndex = 1;
-            // 
-            // lb_modificarCategoria
-            // 
-            this.lb_modificarCategoria.AutoSize = true;
-            this.lb_modificarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lb_modificarCategoria.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_modificarCategoria.Location = new System.Drawing.Point(12, 10);
-            this.lb_modificarCategoria.Name = "lb_modificarCategoria";
-            this.lb_modificarCategoria.Size = new System.Drawing.Size(200, 23);
-            this.lb_modificarCategoria.TabIndex = 7;
-            this.lb_modificarCategoria.Text = "MODIFICAR CATEGORIA";
             // 
             // frmModificarCategoria
             // 

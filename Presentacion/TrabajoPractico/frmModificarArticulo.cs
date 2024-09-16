@@ -27,10 +27,11 @@ namespace TrabajoPractico
             dgv_modificarArticulo.DataSource = listaArticulos;
             dgv_modificarArticulo.Columns["Id"].Visible = false;
             dgv_modificarArticulo.Columns["ImagenUrl"].Visible = false;
-            cargarimagen(listaArticulos[0].imagenurl);
+            pb_actual.Visible = false;
 
         }
 
+        /*
         private void cargarimagen(string imagen)
         {
 
@@ -40,9 +41,10 @@ namespace TrabajoPractico
             }
             catch (Exception)
             {
-                pb_actual.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCZVKWKAUmqHUszu8_M3CoepdRNIXk9SvZQ&s");
+                MessageBox.Show("No se pudo cargar la imagen");
             }
         }
+        */
 
         private void cargarimagen2(string imagen)
         {
@@ -138,7 +140,10 @@ namespace TrabajoPractico
 
         }
 
-            
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
 

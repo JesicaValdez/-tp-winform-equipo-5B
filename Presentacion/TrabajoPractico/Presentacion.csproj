@@ -202,6 +202,12 @@
     <EmbeddedResource Include="frmModificarCategoria.resx">
       <DependentUpon>frmModificarCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListarMarca.resx">
+      <DependentUpon>ListarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMarca.resx">
+      <DependentUpon>ModificarMarca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
