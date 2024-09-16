@@ -53,10 +53,10 @@
             this.agregarImagenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarImagenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContenido = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.statusLabel = new System.Windows.Forms.StatusStrip();
             this.statusLb = new System.Windows.Forms.ToolStripStatusLabel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.pnlContenido.SuspendLayout();
             this.statusLabel.SuspendLayout();
@@ -100,25 +100,23 @@
             // 
             this.agregarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("agregarToolStripMenuItem.Image")));
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.agregarToolStripMenuItem.Text = "Agregar Artículo";
-
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("modificarToolStripMenuItem.Image")));
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.modificarToolStripMenuItem.Text = "Modificar Artículo";
             this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
-
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarToolStripMenuItem.Image")));
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -126,7 +124,7 @@
             // 
             this.tsm_detalle.Image = ((System.Drawing.Image)(resources.GetObject("tsm_detalle.Image")));
             this.tsm_detalle.Name = "tsm_detalle";
-            this.tsm_detalle.Size = new System.Drawing.Size(180, 22);
+            this.tsm_detalle.Size = new System.Drawing.Size(170, 22);
             this.tsm_detalle.Text = "Ver detalle";
             this.tsm_detalle.Click += new System.EventHandler(this.tsm_detalle_Click);
             // 
@@ -143,7 +141,7 @@
             // 
             this.porMarcaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("porMarcaToolStripMenuItem.Image")));
             this.porMarcaToolStripMenuItem.Name = "porMarcaToolStripMenuItem";
-            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porMarcaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.porMarcaToolStripMenuItem.Text = "por Marca";
             this.porMarcaToolStripMenuItem.Click += new System.EventHandler(this.porMarcaToolStripMenuItem_Click);
             // 
@@ -151,7 +149,7 @@
             // 
             this.porCategoriaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("porCategoriaToolStripMenuItem.Image")));
             this.porCategoriaToolStripMenuItem.Name = "porCategoriaToolStripMenuItem";
-            this.porCategoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porCategoriaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.porCategoriaToolStripMenuItem.Text = "por Categoria";
             this.porCategoriaToolStripMenuItem.Click += new System.EventHandler(this.porCategoriaToolStripMenuItem_Click);
             // 
@@ -170,7 +168,7 @@
             // 
             this.AgregarMarca.Image = ((System.Drawing.Image)(resources.GetObject("AgregarMarca.Image")));
             this.AgregarMarca.Name = "AgregarMarca";
-            this.AgregarMarca.Size = new System.Drawing.Size(180, 22);
+            this.AgregarMarca.Size = new System.Drawing.Size(125, 22);
             this.AgregarMarca.Text = "Agregar";
             this.AgregarMarca.Click += new System.EventHandler(this.AgregarMarca_Click);
             // 
@@ -178,7 +176,7 @@
             // 
             this.tsm_modificarMarca.Image = ((System.Drawing.Image)(resources.GetObject("tsm_modificarMarca.Image")));
             this.tsm_modificarMarca.Name = "tsm_modificarMarca";
-            this.tsm_modificarMarca.Size = new System.Drawing.Size(180, 22);
+            this.tsm_modificarMarca.Size = new System.Drawing.Size(125, 22);
             this.tsm_modificarMarca.Text = "Modificar";
             this.tsm_modificarMarca.Click += new System.EventHandler(this.tsm_modificarMarca_Click);
             // 
@@ -186,7 +184,7 @@
             // 
             this.tsm_eliminarMarca.Image = ((System.Drawing.Image)(resources.GetObject("tsm_eliminarMarca.Image")));
             this.tsm_eliminarMarca.Name = "tsm_eliminarMarca";
-            this.tsm_eliminarMarca.Size = new System.Drawing.Size(180, 22);
+            this.tsm_eliminarMarca.Size = new System.Drawing.Size(125, 22);
             this.tsm_eliminarMarca.Text = "Eliminar";
             this.tsm_eliminarMarca.Click += new System.EventHandler(this.tsm_eliminarMarca_Click);
             // 
@@ -194,7 +192,7 @@
             // 
             this.tsm_listarMarca.Image = ((System.Drawing.Image)(resources.GetObject("tsm_listarMarca.Image")));
             this.tsm_listarMarca.Name = "tsm_listarMarca";
-            this.tsm_listarMarca.Size = new System.Drawing.Size(180, 22);
+            this.tsm_listarMarca.Size = new System.Drawing.Size(125, 22);
             this.tsm_listarMarca.Text = "Listar";
             this.tsm_listarMarca.Click += new System.EventHandler(this.tsm_listarMarca_Click);
             // 
@@ -213,7 +211,7 @@
             // 
             this.tsm_agregarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("tsm_agregarCategoria.Image")));
             this.tsm_agregarCategoria.Name = "tsm_agregarCategoria";
-            this.tsm_agregarCategoria.Size = new System.Drawing.Size(180, 22);
+            this.tsm_agregarCategoria.Size = new System.Drawing.Size(179, 22);
             this.tsm_agregarCategoria.Text = "Agregar Categoría";
             this.tsm_agregarCategoria.Click += new System.EventHandler(this.tsm_agregarCategoria_Click);
             // 
@@ -221,7 +219,7 @@
             // 
             this.tsm_modificarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("tsm_modificarCategoria.Image")));
             this.tsm_modificarCategoria.Name = "tsm_modificarCategoria";
-            this.tsm_modificarCategoria.Size = new System.Drawing.Size(180, 22);
+            this.tsm_modificarCategoria.Size = new System.Drawing.Size(179, 22);
             this.tsm_modificarCategoria.Text = "Modificar Categoría";
             this.tsm_modificarCategoria.Click += new System.EventHandler(this.tsm_modificarCategoria_Click);
             // 
@@ -229,7 +227,7 @@
             // 
             this.tsm_eliminarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("tsm_eliminarCategoria.Image")));
             this.tsm_eliminarCategoria.Name = "tsm_eliminarCategoria";
-            this.tsm_eliminarCategoria.Size = new System.Drawing.Size(180, 22);
+            this.tsm_eliminarCategoria.Size = new System.Drawing.Size(179, 22);
             this.tsm_eliminarCategoria.Text = "Eliminar";
             this.tsm_eliminarCategoria.Click += new System.EventHandler(this.tsm_eliminarCategoria_Click);
             // 
@@ -237,7 +235,7 @@
             // 
             this.tsm_listarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("tsm_listarCategoria.Image")));
             this.tsm_listarCategoria.Name = "tsm_listarCategoria";
-            this.tsm_listarCategoria.Size = new System.Drawing.Size(180, 22);
+            this.tsm_listarCategoria.Size = new System.Drawing.Size(179, 22);
             this.tsm_listarCategoria.Text = "Listar";
             this.tsm_listarCategoria.Click += new System.EventHandler(this.tsm_listarCategoria_Click);
             // 
@@ -255,6 +253,7 @@
             this.agregarImagenesToolStripMenuItem.Name = "agregarImagenesToolStripMenuItem";
             this.agregarImagenesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarImagenesToolStripMenuItem.Text = "Agregar Imagenes";
+            this.agregarImagenesToolStripMenuItem.Click += new System.EventHandler(this.agregarImagenesToolStripMenuItem_Click);
             // 
             // eliminarImagenesToolStripMenuItem
             // 
@@ -272,6 +271,27 @@
             this.pnlContenido.Size = new System.Drawing.Size(1088, 453);
             this.pnlContenido.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(376, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Bienvenido al Sistema de Gestión de Artículos";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(963, 382);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // statusLabel
             // 
             this.statusLabel.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -287,27 +307,6 @@
             this.statusLb.Name = "statusLb";
             this.statusLb.Size = new System.Drawing.Size(73, 17);
             this.statusLb.Text = "Estado: Listo";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(963, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(376, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bienvenido al Sistema de Gestión de Artículos";
             // 
             // VentanaPrincipal
             // 

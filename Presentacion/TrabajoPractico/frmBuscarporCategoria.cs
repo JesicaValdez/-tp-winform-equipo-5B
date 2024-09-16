@@ -14,6 +14,7 @@ namespace TrabajoPractico
 {
     public partial class frmBuscarporCategoria : Form
     {
+        private string imagenactual = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCZVKWKAUmqHUszu8_M3CoepdRNIXk9SvZQ&s";
         public frmBuscarporCategoria()
         {
             InitializeComponent();
@@ -37,8 +38,14 @@ namespace TrabajoPractico
 
         private void dgvBuscarCat_SelectionChanged(object sender, EventArgs e)
         {
-            Articulo seleccionado = (Articulo)dgvBuscarCat.CurrentRow.DataBoundItem;
-            cargarimagen(seleccionado.imagenurl);
+            if (dgvBuscarCat.CurrentRow != null)
+            {
+                Articulo seleccionado = (Articulo)dgvBuscarCat.CurrentRow.DataBoundItem;
+                ImagenNegocio negocio = new ImagenNegocio();
+                List<Imagen> lista = negocio.buscarimagenes(seleccionado.id);
+                cargarimagen(lista[0].Url);
+                imagenactual = lista[0].Url;
+            }
         }
 
         private void cargarimagen(string imagen)
@@ -56,6 +63,18 @@ namespace TrabajoPractico
         private void botonVolver_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void botonSiguiente_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvBuscarCat.CurrentRow.DataBoundItem;
+            ImagenNegocio negocio = new ImagenNegocio();
+            List<Imagen> lista = negocio.buscarimagenes(seleccionado.id);
+            for (int i = 0; i < lista.Count - 1; i++)
+            {
+                if (lista[i].Url == imagenactual)
+                    pbxCat.Load(lista[i + 1].Url);
+            }
         }
     }
 }

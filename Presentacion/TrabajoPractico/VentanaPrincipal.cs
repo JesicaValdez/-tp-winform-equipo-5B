@@ -54,7 +54,7 @@ namespace TrabajoPractico
         private void articulosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListaArticulos ventana2 = new frmListaArticulos();
-            ventana2.ShowDialog();
+            CargarFormularios(ventana2);
         }
 
 
@@ -62,13 +62,13 @@ namespace TrabajoPractico
         private void porMarcaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBuscarporMarca ventana3 = new frmBuscarporMarca();
-            ventana3.ShowDialog();
+            CargarFormularios(ventana3);
         }
 
         private void porCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBuscarporCategoria ventana4 = new frmBuscarporCategoria();
-            ventana4.ShowDialog();
+            CargarFormularios(ventana4);
         }
 
         private void tsm_detalle_Click(object sender, EventArgs e)
@@ -146,6 +146,12 @@ namespace TrabajoPractico
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void agregarImagenesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAgregarImagen ventana = new frmAgregarImagen();
+            CargarFormularios(ventana);
         }
     }
 }

@@ -21,10 +21,12 @@ namespace Manager
         public List<Articulo> listarArticulos()
         {
             List<Articulo> lista = new List<Articulo>();
+            List<Imagen> lista1 = new List<Imagen>();
+            ImagenNegocio negocio = new ImagenNegocio();
             AccesoDB datos = new AccesoDB();
             try
             {
-                datos.setearConsulta("Select A.Id, Codigo, Nombre, A.Descripcion as Detalle, M.Descripcion as Marca, C.Descripcion as Categoria, Precio, ImagenUrl From ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.IdMarca = M.Id AND A.IdCategoria = C.Id AND A.Id = I.IdArticulo");
+                datos.setearConsulta("Select A.Id, Codigo, Nombre, A.Descripcion as Detalle, M.Descripcion as Marca, C.Descripcion as Categoria, Precio From ARTICULOS A, MARCAS M, CATEGORIAS C where A.IdMarca = M.Id AND A.IdCategoria = C.Id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -49,7 +51,8 @@ namespace Manager
                     }
                     if (!(datos.Lector["Precio"] is DBNull))
                         aux.precio = (decimal)datos.Lector["Precio"];
-                    aux.imagenurl = (string)datos.Lector["ImagenUrl"];
+                    lista1 = negocio.buscarimagenes(aux.id);
+                    aux.imagenurl = lista1[0].Url;
 
                     lista.Add(aux);
                 }

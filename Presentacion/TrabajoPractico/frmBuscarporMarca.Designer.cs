@@ -34,6 +34,7 @@
             this.dgvBuscarMarca = new System.Windows.Forms.DataGridView();
             this.pbxMarca = new System.Windows.Forms.PictureBox();
             this.botonVolver = new System.Windows.Forms.Button();
+            this.botonSiguiente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarMarca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMarca)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +74,7 @@
             this.dgvBuscarMarca.Location = new System.Drawing.Point(19, 134);
             this.dgvBuscarMarca.Name = "dgvBuscarMarca";
             this.dgvBuscarMarca.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBuscarMarca.Size = new System.Drawing.Size(611, 205);
+            this.dgvBuscarMarca.Size = new System.Drawing.Size(611, 236);
             this.dgvBuscarMarca.TabIndex = 3;
             this.dgvBuscarMarca.SelectionChanged += new System.EventHandler(this.dgvBuscarMarca_SelectionChanged);
             // 
@@ -88,7 +89,7 @@
             // 
             // botonVolver
             // 
-            this.botonVolver.Location = new System.Drawing.Point(21, 361);
+            this.botonVolver.Location = new System.Drawing.Point(19, 376);
             this.botonVolver.Name = "botonVolver";
             this.botonVolver.Size = new System.Drawing.Size(84, 20);
             this.botonVolver.TabIndex = 5;
@@ -96,11 +97,22 @@
             this.botonVolver.UseVisualStyleBackColor = true;
             this.botonVolver.Click += new System.EventHandler(this.botonVolver_Click);
             // 
+            // botonSiguiente
+            // 
+            this.botonSiguiente.Location = new System.Drawing.Point(782, 349);
+            this.botonSiguiente.Name = "botonSiguiente";
+            this.botonSiguiente.Size = new System.Drawing.Size(89, 21);
+            this.botonSiguiente.TabIndex = 6;
+            this.botonSiguiente.Text = "Siguiente";
+            this.botonSiguiente.UseVisualStyleBackColor = true;
+            this.botonSiguiente.Click += new System.EventHandler(this.botonSiguiente_Click);
+            // 
             // frmBuscarporMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 397);
+            this.ClientSize = new System.Drawing.Size(884, 408);
+            this.Controls.Add(this.botonSiguiente);
             this.Controls.Add(this.botonVolver);
             this.Controls.Add(this.pbxMarca);
             this.Controls.Add(this.dgvBuscarMarca);
@@ -129,5 +141,6 @@
         private System.Windows.Forms.DataGridView dgvBuscarMarca;
         private System.Windows.Forms.PictureBox pbxMarca;
         private System.Windows.Forms.Button botonVolver;
+        private System.Windows.Forms.Button botonSiguiente;
     }
 }

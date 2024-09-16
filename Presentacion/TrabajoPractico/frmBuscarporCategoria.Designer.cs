@@ -34,6 +34,7 @@
             this.dgvBuscarCat = new System.Windows.Forms.DataGridView();
             this.pbxCat = new System.Windows.Forms.PictureBox();
             this.botonVolver = new System.Windows.Forms.Button();
+            this.botonSiguiente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarCat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCat)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +74,7 @@
             this.dgvBuscarCat.Location = new System.Drawing.Point(19, 132);
             this.dgvBuscarCat.Name = "dgvBuscarCat";
             this.dgvBuscarCat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBuscarCat.Size = new System.Drawing.Size(590, 192);
+            this.dgvBuscarCat.Size = new System.Drawing.Size(590, 225);
             this.dgvBuscarCat.TabIndex = 3;
             this.dgvBuscarCat.SelectionChanged += new System.EventHandler(this.dgvBuscarCat_SelectionChanged);
             // 
@@ -88,7 +89,7 @@
             // 
             // botonVolver
             // 
-            this.botonVolver.Location = new System.Drawing.Point(20, 354);
+            this.botonVolver.Location = new System.Drawing.Point(19, 369);
             this.botonVolver.Name = "botonVolver";
             this.botonVolver.Size = new System.Drawing.Size(82, 21);
             this.botonVolver.TabIndex = 5;
@@ -96,11 +97,22 @@
             this.botonVolver.UseVisualStyleBackColor = true;
             this.botonVolver.Click += new System.EventHandler(this.botonVolver_Click);
             // 
+            // botonSiguiente
+            // 
+            this.botonSiguiente.Location = new System.Drawing.Point(762, 337);
+            this.botonSiguiente.Name = "botonSiguiente";
+            this.botonSiguiente.Size = new System.Drawing.Size(85, 20);
+            this.botonSiguiente.TabIndex = 6;
+            this.botonSiguiente.Text = "Siguiente";
+            this.botonSiguiente.UseVisualStyleBackColor = true;
+            this.botonSiguiente.Click += new System.EventHandler(this.botonSiguiente_Click);
+            // 
             // frmBuscarporCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 390);
+            this.ClientSize = new System.Drawing.Size(884, 402);
+            this.Controls.Add(this.botonSiguiente);
             this.Controls.Add(this.botonVolver);
             this.Controls.Add(this.pbxCat);
             this.Controls.Add(this.dgvBuscarCat);
@@ -129,5 +141,6 @@
         private System.Windows.Forms.DataGridView dgvBuscarCat;
         private System.Windows.Forms.PictureBox pbxCat;
         private System.Windows.Forms.Button botonVolver;
+        private System.Windows.Forms.Button botonSiguiente;
     }
 }
