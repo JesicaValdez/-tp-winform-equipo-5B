@@ -113,6 +113,18 @@ namespace TrabajoPractico
             ventana.ShowDialog();
         }
 
+        private void tsm_eliminarMarca_Click(object sender, EventArgs e)
+        {
+            EliminarMarca ventana = new EliminarMarca();
+            ventana.ShowDialog();
+        }
+
+        private void tsm_modificarMarca_Click(object sender, EventArgs e)
+        {
+            ModificarMarca ventana = new ModificarMarca();
+            ventana.ShowDialog();
+        }
+
         private void tsm_listarMarca_Click(object sender, EventArgs e)
         {
             ListarMarca ventana = new ListarMarca();

@@ -59,6 +59,12 @@
     <Compile Include="AgregarMarca.Designer.cs">
       <DependentUpon>AgregarMarca.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarMarca.Designer.cs">
+      <DependentUpon>EliminarMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregarCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,12 @@
     <Compile Include="ListarMarca.Designer.cs">
       <DependentUpon>ListarMarca.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMarca.Designer.cs">
+      <DependentUpon>ModificarMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarArticulo.resx">
       <DependentUpon>AgregarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarMarca.resx">
+      <DependentUpon>EliminarMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarCategoria.resx">
       <DependentUpon>frmAgregarCategoria.cs</DependentUpon>
@@ -178,9 +193,6 @@
     <EmbeddedResource Include="frmModificarCategoria.resx">
       <DependentUpon>frmModificarCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListarMarca.resx">
-      <DependentUpon>ListarMarca.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -193,6 +205,7 @@
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
