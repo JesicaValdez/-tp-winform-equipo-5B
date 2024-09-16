@@ -34,9 +34,21 @@ namespace TrabajoPractico
             formulario.Show();
         }
 
+        private void mostrarPantallaBienvenida()
+        {
+            pnlContenido.Controls.Clear();
+
+            label1.Text = "Bienvenido al sistema de gestión de articulos";
+            label1.Font = new Font("Arial", 20, FontStyle.Bold);
+            
+            Label lb_instrucciones = new Label();
+            lb_instrucciones.Text = "Seleccione una opción del menú para comenzar";
+        }
         private void VentanaPrincipal_Load(object sender, EventArgs e)
         {
+            
             statusLb.Text = "Estado: Listo";
+
         }
 
         private void articulosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -129,6 +141,11 @@ namespace TrabajoPractico
         {
             ListarMarca ventana = new ListarMarca();
             ventana.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -27,6 +27,9 @@ namespace TrabajoPractico
             CategoriaNegocio negocio = new CategoriaNegocio();
             listaCategorias = negocio.ListarCategorias();
             dgv_modificarCategoria.DataSource = listaCategorias;
+            dgv_modificarCategoria.Columns["Id"].Visible = false;
+
+
         }
 
         private void dgv_modificarCategoria_SelectionChanged(object sender, EventArgs e)

@@ -69,7 +69,7 @@ namespace TrabajoPractico
 
         private bool ValidarCampos()
         {
-            if(txtBox_codigo.Text == "" || txtBox_descripcion.Text == "" | txtBox_nombre.Text == "" || txtBox_precio.Text == "" || cBox_categoria.SelectedIndex == -1 || cBox_marca.SelectedIndex == -1)
+            if(txtBox_codigo.Text == "" || txtBox_descripcion.Text == "" || txtBox_nombre.Text == "" || txtBox_precio.Text == "" || cBox_categoria.SelectedIndex == -1 || cBox_marca.SelectedIndex == -1)
             {
                 MessageBox.Show("Debe completar todos los campos");
                 return true;
